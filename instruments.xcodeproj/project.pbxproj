@@ -23,6 +23,15 @@
 		AC85AC4A185970F5007D4532 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85AC25185970F4007D4532 /* Foundation.framework */; };
 		AC85AC52185970F5007D4532 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC50185970F5007D4532 /* InfoPlist.strings */; };
 		AC85AC55185970F5007D4532 /* instrumentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC85AC54185970F5007D4532 /* instrumentsTests.m */; };
+		AC85AC6818597F0E007D4532 /* do.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6118597F0E007D4532 /* do.wav */; };
+		AC85AC6918597F0E007D4532 /* fa.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6218597F0E007D4532 /* fa.wav */; };
+		AC85AC6A18597F0E007D4532 /* mi.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6318597F0E007D4532 /* mi.wav */; };
+		AC85AC6B18597F0E007D4532 /* ra.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6418597F0E007D4532 /* ra.wav */; };
+		AC85AC6C18597F0E007D4532 /* re.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6518597F0E007D4532 /* re.wav */; };
+		AC85AC6D18597F0E007D4532 /* si.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6618597F0E007D4532 /* si.wav */; };
+		AC85AC6E18597F0E007D4532 /* so.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6718597F0E007D4532 /* so.wav */; };
+		AC85AC711859812E007D4532 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85AC6F18598117007D4532 /* AVFoundation.framework */; };
+		AC85AC7318598AF2007D4532 /* do2.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC7218598AF2007D4532 /* do2.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +67,15 @@
 		AC85AC51185970F5007D4532 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC85AC53185970F5007D4532 /* instrumentsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = instrumentsTests.h; sourceTree = "<group>"; };
 		AC85AC54185970F5007D4532 /* instrumentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instrumentsTests.m; sourceTree = "<group>"; };
+		AC85AC6118597F0E007D4532 /* do.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = do.wav; path = "../../音源/do.wav"; sourceTree = "<group>"; };
+		AC85AC6218597F0E007D4532 /* fa.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fa.wav; path = "../../音源/fa.wav"; sourceTree = "<group>"; };
+		AC85AC6318597F0E007D4532 /* mi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = mi.wav; path = "../../音源/mi.wav"; sourceTree = "<group>"; };
+		AC85AC6418597F0E007D4532 /* ra.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ra.wav; path = "../../音源/ra.wav"; sourceTree = "<group>"; };
+		AC85AC6518597F0E007D4532 /* re.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = re.wav; path = "../../音源/re.wav"; sourceTree = "<group>"; };
+		AC85AC6618597F0E007D4532 /* si.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = si.wav; path = "../../音源/si.wav"; sourceTree = "<group>"; };
+		AC85AC6718597F0E007D4532 /* so.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = so.wav; path = "../../音源/so.wav"; sourceTree = "<group>"; };
+		AC85AC6F18598117007D4532 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AC85AC7218598AF2007D4532 /* do2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = do2.wav; path = "../../音源/do2.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC85AC711859812E007D4532 /* AVFoundation.framework in Frameworks */,
 				AC85AC24185970F4007D4532 /* UIKit.framework in Frameworks */,
 				AC85AC26185970F4007D4532 /* Foundation.framework in Frameworks */,
 				AC85AC28185970F4007D4532 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +125,7 @@
 		AC85AC22185970F4007D4532 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC85AC6F18598117007D4532 /* AVFoundation.framework */,
 				AC85AC23185970F4007D4532 /* UIKit.framework */,
 				AC85AC25185970F4007D4532 /* Foundation.framework */,
 				AC85AC27185970F4007D4532 /* CoreGraphics.framework */,
@@ -130,6 +150,14 @@
 		AC85AC2A185970F5007D4532 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC85AC6118597F0E007D4532 /* do.wav */,
+				AC85AC7218598AF2007D4532 /* do2.wav */,
+				AC85AC6218597F0E007D4532 /* fa.wav */,
+				AC85AC6318597F0E007D4532 /* mi.wav */,
+				AC85AC6418597F0E007D4532 /* ra.wav */,
+				AC85AC6518597F0E007D4532 /* re.wav */,
+				AC85AC6618597F0E007D4532 /* si.wav */,
+				AC85AC6718597F0E007D4532 /* so.wav */,
 				AC85AC2B185970F5007D4532 /* instruments-Info.plist */,
 				AC85AC2C185970F5007D4532 /* InfoPlist.strings */,
 				AC85AC2F185970F5007D4532 /* main.m */,
@@ -236,6 +264,14 @@
 				AC85AC38185970F5007D4532 /* Default@2x.png in Resources */,
 				AC85AC3A185970F5007D4532 /* Default-568h@2x.png in Resources */,
 				AC85AC3D185970F5007D4532 /* MainStoryboard.storyboard in Resources */,
+				AC85AC6818597F0E007D4532 /* do.wav in Resources */,
+				AC85AC6918597F0E007D4532 /* fa.wav in Resources */,
+				AC85AC6A18597F0E007D4532 /* mi.wav in Resources */,
+				AC85AC6B18597F0E007D4532 /* ra.wav in Resources */,
+				AC85AC6C18597F0E007D4532 /* re.wav in Resources */,
+				AC85AC6D18597F0E007D4532 /* si.wav in Resources */,
+				AC85AC6E18597F0E007D4532 /* so.wav in Resources */,
+				AC85AC7318598AF2007D4532 /* do2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
