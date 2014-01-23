@@ -394,36 +394,6 @@
     <resources>
         <image name="illust1500.png" width="697" height="692"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btn:"/>
-                <relationship kind="action" name="playbtn:"/>
-                <relationship kind="action" name="recbtn:"/>
-                <relationship kind="action" name="stopbtn:"/>
-                <relationship kind="outlet" name="abtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ashbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="bbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ccbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="cshbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dshbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="ebtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fshbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="gbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="gshbtn" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="play" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="rec" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="stop" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
