@@ -368,11 +368,19 @@
                                     <segue destination="2" kind="modal" id="Jk1-Vc-OlF"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="illust1500.png" translatesAutoresizingMaskIntoConstraints="NO" id="XDG-oj-J4R">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="3S9-yi-C4j"/>
+                                    <constraint firstAttribute="height" constant="365" id="KaD-a9-Crg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XDG-oj-J4R" firstAttribute="leading" secondItem="8Ty-n4-Ifv" secondAttribute="leading" type="default" id="6Xi-hx-tX7"/>
                             <constraint firstItem="dI8-Tm-Ubd" firstAttribute="top" secondItem="8Ty-n4-Ifv" secondAttribute="top" constant="11" id="WW0-UZ-1Kk"/>
                             <constraint firstAttribute="trailing" secondItem="dI8-Tm-Ubd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eti-Fa-NK7"/>
+                            <constraint firstItem="XDG-oj-J4R" firstAttribute="top" secondItem="8Ty-n4-Ifv" secondAttribute="top" type="default" id="irN-Db-Kgx"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -383,6 +391,9 @@
             <point key="canvasLocation" x="236" y="522"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="illust1500.png" width="697" height="692"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

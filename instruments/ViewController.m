@@ -8,14 +8,19 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController (){
     AVAudioRecorder *avRecorder;
    AVAudioPlayer *avPlayer;
+    double s[100];
+    int key[100];
 
 @public AVAudioPlayer *audio;
 
     int oto;
-
+    int reco;
+    int i;
+    int j;
 }
 
 @end
@@ -39,6 +44,17 @@
         [audio prepareToPlay];
         
         [audio play];
+        
+        //if(reco==1){
+         //   NSDate *startDate = [NSDate date];
+            
+         //   NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:startDate];
+         //   NSLog(@"time is %lf (sec)", interval);
+         //   key[j]=1;
+         //   s[j]= interval;
+            
+        
+        
     }else if (oto==2){
         NSString *path = [[NSBundle mainBundle] pathForResource:@"re" ofType:@"wav"];
         
@@ -127,90 +143,35 @@
     
     
     oto = 0;
-        
-}
-/*
-- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-   
-}
+    }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
+//録音ボタン押されたら開始　最初のキーが押されたら秒数えて次のが押されたら切って格納してまたカウント
+//0から100までくらいの配列２つ　押されたキーのと秒数格納するやつ　んで再生時は秒delay
+
 - (IBAction)recbtn:(id)sender {
     
+    reco = 1;
     
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    NSError *error = nil;
-    // 使用している機種が録音に対応しているか
-    if ([audioSession inputIsAvailable]) {
-        [audioSession setCategory:AVAudioSessionCategoryRecord error:&error];
-    }
-    if(error){
-        NSLog(@"audioSession: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
-    }
-    // 録音機能をアクティブにする
-    [audioSession setActive:YES error:&error];
-    if(error){
-        NSLog(@"audioSession: %@ %d %@", [error domain], [error code], [[error userInfo] description]);
-    }
+    NSDate *startDate = [NSDate date];
+    //do something
     
-    // 録音ファイルパス
-    NSArray *filePaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                             NSUserDomainMask,YES);
-    NSString *documentDir = [filePaths objectAtIndex:0];
-    NSString *path = [documentDir stringByAppendingPathComponent:@"rec.caf"];
-    NSURL *recordingURL = [NSURL fileURLWithPath:path];
-    
-   
-    
-    avRecorder = [[AVAudioRecorder alloc] initWithURL:recordingURL settings:nil error:&error];
-    
-    if(error){
-        NSLog(@"error = %@",error);
-        return;
-    }
-    avRecorder.delegate=self;
-    
-    [avRecorder record];
-    
-    
-    
+    NSTimeInterval interval = [[NSDate date] timeIntervalSinceDate:startDate];
+    NSLog(@"time is %lf (sec)", interval);
 }
 
-// 録音が終わったら呼ばれるメソッド
-
-- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *)recorder successfully:(BOOL)flag {
-    
-}
 
 - (IBAction)stopbtn:(id)sender {
     
-    [avRecorder stop];
+   
     
 }
 
 - (IBAction)playbtn:(id)sender {
     
-    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
-    [audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
-    
-    
-    // 録音ファイルパス
-    NSArray *filePaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                             NSUserDomainMask,YES);
-    NSString *documentDir = [filePaths objectAtIndex:0];
-    NSString *path = [documentDir stringByAppendingPathComponent:@"rec.caf"];
-    NSURL *recordingURL = [NSURL fileURLWithPath:path];
-    
-    avPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:recordingURL error:nil];
-    avPlayer.delegate = self;
-    avPlayer.volume=1.0;
-    [avPlayer play];
+
     
  
-}   */
+}   
 
 
 
@@ -219,8 +180,9 @@
 {
     [super viewDidLoad];
 	oto = 0;
-    
-    
+    reco = 0;
+    i = 0;
+    j = 0;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

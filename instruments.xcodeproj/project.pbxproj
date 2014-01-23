@@ -32,6 +32,7 @@
 		AC85AC6E18597F0E007D4532 /* so.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC6718597F0E007D4532 /* so.wav */; };
 		AC85AC711859812E007D4532 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC85AC6F18598117007D4532 /* AVFoundation.framework */; };
 		AC85AC7318598AF2007D4532 /* do2.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC85AC7218598AF2007D4532 /* do2.wav */; };
+		ACEF3DC81890D499001B1C8C /* illust1500.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEF3DC71890D499001B1C8C /* illust1500.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		AC85AC6718597F0E007D4532 /* so.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = so.wav; path = "../../音源/so.wav"; sourceTree = "<group>"; };
 		AC85AC6F18598117007D4532 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AC85AC7218598AF2007D4532 /* do2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = do2.wav; path = "../../音源/do2.wav"; sourceTree = "<group>"; };
+		ACEF3DC71890D499001B1C8C /* illust1500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = illust1500.png; path = ../../illust1500.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				AC85AC35185970F5007D4532 /* Default.png */,
 				AC85AC37185970F5007D4532 /* Default@2x.png */,
 				AC85AC39185970F5007D4532 /* Default-568h@2x.png */,
+				ACEF3DC71890D499001B1C8C /* illust1500.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				AC85AC6D18597F0E007D4532 /* si.wav in Resources */,
 				AC85AC6E18597F0E007D4532 /* so.wav in Resources */,
 				AC85AC7318598AF2007D4532 /* do2.wav in Resources */,
+				ACEF3DC81890D499001B1C8C /* illust1500.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +493,7 @@
 				AC85AC5A185970F5007D4532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC85AC5B185970F5007D4532 /* Build configuration list for PBXNativeTarget "instrumentsTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +502,7 @@
 				AC85AC5D185970F5007D4532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
